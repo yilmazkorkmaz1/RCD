@@ -233,6 +233,60 @@
 
 	<hr>
 
+	<table align=center width=900px style="margin-top:10px;">
+  <tr>
+    <td>
+      <center>
+        <img class="rounded" style="width:100%; max-width:820px;" src="./resources/main_fig_enlarged_rcdnet.pdf" alt="RCDGen overview"/>
+      </center>
+      <p style="font-size:16px; color:#444; margin-top:8px;">
+        <b>Figure 2.</b> The RCDNet and its training scheme are illustrated. T1- and T2-images represent distinct time points, corresponding to pre-change and post-change states. The change category (class) is randomly selected from unique values in the semantic change map and guides the network through text embeddings. The change map is binarized for that specified category, enabling the use of canonical binary cross-entropy loss as training objective.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<table align=center width=900px>
+  <center><h1>Synthetic Data Generation (RCDGen)</h1></center>
+  <tr>
+    <td>
+      <p>
+        We introduce <b>RCDGen</b>, a diffusion-based synthetic data generation pipeline that produces realistic post-change images
+        and change maps for a specified category using only the pre-change image (no semantic segmentation masks).
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table align=center width=900px style="margin-top:10px;">
+  <tr>
+    <td>
+      <center>
+        <img class="rounded" style="width:100%; max-width:820px;" src="./resources/combined_syn.pdf" alt="RCDGen overview"/>
+      </center>
+      <p style="font-size:16px; color:#444; margin-top:8px;">
+        <b>Figure 3.</b> RCDGen overview: generate post-change image + change map conditioned on (pre-change image, text prompt).
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+<table align=center width=900px style="margin-top:10px;">
+  <tr>
+    <td>
+      <center>
+        <img class="rounded" style="width:100%; max-width:820px;" src="./resources/selected_synthetic_samples.png" alt="RCDGen ablation"/>
+      </center>
+      <p style="font-size:16px; color:#444; margin-top:8px;">
+        <b>Figure 4.</b> Synthetic samples are illustrated.
+      </p>
+    </td>
+  </tr>
+</table>
+
 	<!-- BibTeX (inline; no extra files needed) -->
 	<table align=center width=900px>
 		<center><h1>BibTeX</h1></center>
